@@ -60,16 +60,3 @@ sr.reveal(".home__img, .about__subtitle, .about__text, .skills__img", {
 sr.reveal(".home__social-icon", { interval: 200 });
 sr.reveal(".skills__data, .work__img, .contact__input", { interval: 200 });
 
-// <========== Navtabs js ================>
-function openTab(event, tabName) {
-  let tabContent = document.getElementsByClassName("tab-content");
-  for (let content of tabContent) {
-    content.classList.remove("active");
-  }
-  let tabButtons = document.getElementsByClassName("tab-button");
-  for (let button of tabButtons) {
-    button.classList.remove("active");
-  }
-  document.getElementById(tabName).classList.add("active");
-  event.currentTarget.classList.add("active");
-}

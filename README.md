@@ -32,4 +32,10 @@ Here are the technologies I specialize in:
 ---
 
 ## 📂 Project Structure
+├── index.html
+├── skills.js
+├── style.css
+├── script.js
+├── img/
+└── README.md
 

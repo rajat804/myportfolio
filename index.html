@@ -9,6 +9,7 @@
     <meta name="author" content="Rajat Rajput">
     <link rel="stylesheet" href="./css/style.css">
 
+    
     <!-- =====BOX ICONS===== -->
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet"
@@ -18,6 +19,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <title>My Portfolio Website Complete</title>
 </head>
 
@@ -113,7 +115,7 @@
         </section>
 
         <!--===== SKILLS =====-->
-        
+
         <section class="section" id="skills">
             <h2 class="section-title">Skills</h2>
             <div class="skills__container bd-grid">
@@ -236,7 +238,9 @@
                     <img src="./img/skills.jpg" alt="" class="skills__img">
                 </div>
             </div>
+             
         </section>
+       
         <!--===== WORK =====-->
         <section class="work section" id="work">
             <h2 class="section-title">Work</h2>
@@ -354,37 +358,13 @@
         </div>
         <p class="footer__copy">&#169; Bedimcode. All rigths reserved</p>
     </footer>
-    <script>
-        const tabButtons = document.querySelectorAll('.tab-button');
-  const tabContents = document.querySelectorAll('.tab-content');
-
-  tabButtons.forEach(button => {
-    button.addEventListener('click', () => {
-      // Remove all active classes
-      tabButtons.forEach(btn => btn.classList.remove('active'));
-      tabContents.forEach(content => content.classList.remove('active'));
-
-      // Add active class to clicked button
-      button.classList.add('active');
-
-      // Get corresponding tab content by ID
-      const targetId = button.getAttribute('data-target').trim(); // <-- .trim() handles space issue
-      const targetContent = document.getElementById(targetId);
-      
-      if (targetContent) {
-        targetContent.classList.add('active');
-      } else {
-        console.error("No tab found with ID:", targetId);
-      }
-    });
-  });
-    </script>
-
-    <!--===== SCROLL REVEAL =====-->
+<!--===== SCROLL REVEAL =====-->
     <script src="https://unpkg.com/scrollreveal"></script>
 
     <!--===== MAIN JS =====-->
     <script src="./js/main.js"></script>
+    <script src="./skills.js"></script>
+    
 </body>
 
 </html>
